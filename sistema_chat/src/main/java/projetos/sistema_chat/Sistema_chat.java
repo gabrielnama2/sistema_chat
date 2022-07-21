@@ -1,4 +1,6 @@
 package projetos.sistema_chat;
+import projetos.sistema_chat.participante.Participante;
+import projetos.sistema_chat.chat.SalaChat;
 
 public class Sistema_chat {
 
@@ -16,14 +18,16 @@ public class Sistema_chat {
         hardware.exibeParticipantes();
         
         //ENVIANDO MENSAGENS NO CHAT DO BATE PAPO
-        hardware.enviar(fulano, "Salve salve familia");
-        hardware.enviar(fulano, "Preciso de um notebook para trabalhar");
-        hardware.enviar(fulano, "Alguma recomendacao?");
-        hardware.enviar(sicrano, "Boa noite, uso um DELL excelente!");
-        hardware.enviar(beltrano, "Prefiro meu MacBook");
-        hardware.enviar(sicrano, "Apple so tem preco");
-        hardware.enviar(sicrano, "Microsoft e bem melhor");
-        hardware.enviar(sicrano, "Windows 10 domina!!");
-        hardware.enviar(fulano, "Eu gosto mais do Linux kkk");
+        hardware.novaMensagem(fulano, "Salve salve familia");
+        hardware.novaMensagem(fulano, "Preciso de um notebook para trabalhar");
+        hardware.novaMensagem(fulano, "Alguma recomendacao?");
+        hardware.novaMensagem(sicrano, "Boa noite, uso um DELL excelente!");
+        hardware.novaMensagem(beltrano, "Prefiro meu MacBook");
+        hardware.novaMensagem(sicrano, "Apple so tem preco");
+        hardware.novaMensagem(sicrano, "Microsoft e bem melhor");
+        hardware.novaMensagem(sicrano, "Windows 10 domina!!");
+        hardware.novaMensagem(fulano, "Eu gosto mais do Linux kkk");
+        
+        
     }
 }

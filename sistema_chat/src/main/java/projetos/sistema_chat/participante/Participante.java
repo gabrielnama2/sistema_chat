@@ -1,4 +1,4 @@
-package projetos.sistema_chat;
+package projetos.sistema_chat.participante;
 
 public class Participante {
     private String nome;
@@ -14,5 +14,10 @@ public class Participante {
     @Override
     public String toString(){
         return this.nome;
+    }
+    
+    //ENVIA MENSAGEM
+    public void enviarMensagem(String mensagem) {
+        System.out.println(this.getNome() + ": " + mensagem);
     }
 }

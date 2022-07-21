@@ -1,4 +1,4 @@
-package projetos.sistema_chat;
+package projetos.sistema_chat.participante;
 import java.util.ArrayList;
 
 public class ParticipanteChat extends Participante{
