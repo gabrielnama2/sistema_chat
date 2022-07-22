@@ -27,7 +27,6 @@ public class Sistema_chat {
         hardware.novaMensagem(sicrano, "Microsoft e bem melhor");
         hardware.novaMensagem(sicrano, "Windows 10 domina!!");
         hardware.novaMensagem(fulano, "Eu gosto mais do Linux kkk");
-        
-        
+        hardware.validaMarcas("Testanto");
     }
 }

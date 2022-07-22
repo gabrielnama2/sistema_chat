@@ -1,15 +1,11 @@
 package projetos.sistema_chat.chat;
 import java.util.ArrayList;
-import projetos.sistema_chat.bot.BotProxy;
 import projetos.sistema_chat.participante.Participante;
 
 public class SalaChat implements MediatorChat{
     private String nomeSala;
-    //LISTA DE PARTICIPANTES DA SALA
     public ArrayList<Participante> participantes = new ArrayList<Participante>();
-    //BOTS
-    private BotProxy bot = new BotProxy();
-    
+
     //CONSTRUTOR
     public SalaChat(String nomeSala){
         this.nomeSala = nomeSala;
@@ -26,9 +22,7 @@ public class SalaChat implements MediatorChat{
     //ENVIA MENSAGEM
     @Override
     public void novaMensagem(Participante participante, String mensagem) {
-        if(this.bot.validaMensagem(mensagem)){
-            participante.enviarMensagem(mensagem);
-        }
+        participante.enviarMensagem(mensagem);
     }
     
     //LISTA OS PARTICIPANTES DA SALA
@@ -37,15 +31,15 @@ public class SalaChat implements MediatorChat{
     }
     
     //REGRAS DE NEGÓCIO
-    
-    
-    
-    //INFORMAÇÕES
-    public void trazerInformacao(String tipo){
-        this.bot.trazInformacao("data");
-        this.bot.trazInformacao("temperatura");
-        this.bot.trazInformacao("dolar");
-        this.bot.trazInformacao("bitcoin");
+    public String validaMarcas(String mensagem){
+        String frase = "Hoje o Sol está forte Sol."; 
+        if (frase.contains("Sol")){
+            System.out.println("Contém"); 
+        }
+        else{ 
+            System.out.println("Não contém"); 
+        }
+        return mensagem;
     }
-    
+
 }
