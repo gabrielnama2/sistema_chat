@@ -1,15 +1,16 @@
 package projetos.sistema_chat;
 import projetos.sistema_chat.participante.Participante;
-import projetos.sistema_chat.chat.SalaChat;
+import projetos.sistema_chat.chat.SalaChatProxy;
 
 public class Sistema_chat {
 
     public static void main(String[] args) {
+        
         //CRIANDO OS PARTICIPANTES
         Participante fulano = new Participante("Fulano");
         Participante sicrano = new Participante("Sicrano");
         Participante beltrano = new Participante("Beltrano");
-        SalaChat hardware = new SalaChat("Clube do Hardware");
+        SalaChatProxy hardware = new SalaChatProxy("Clube do Hardware");
         
         //ADICIONANDO PARTICIPANTES A SALA DE BATE PAPO
         hardware.novoParticipante(fulano);
@@ -27,6 +28,11 @@ public class Sistema_chat {
         hardware.novaMensagem(sicrano, "Microsoft e bem melhor");
         hardware.novaMensagem(sicrano, "Windows 10 domina!!");
         hardware.novaMensagem(fulano, "Eu gosto mais do Linux kkk");
-        hardware.validaMarcas("Testanto");
+        hardware.novaMensagem(fulano, "<img");
+        hardware.novaMensagem(fulano, "Em Java os operadores lógicos utilizados são E (representado por &&) e OU (representado por ||). OBS. O símbolo do OU (I) corresponde a barra vertical ou pipe do teclado, caractere ASCII 124. Quando usamos os operadores duplos (&& ou ||) o Java não continua as operações se o resultado já for conhecido.");
+        hardware.botInformacao("hora");
+        hardware.botInformacao("temperatura");
+        hardware.botInformacao("dolar");
+        hardware.botInformacao("bitcoin");
     }
 }
