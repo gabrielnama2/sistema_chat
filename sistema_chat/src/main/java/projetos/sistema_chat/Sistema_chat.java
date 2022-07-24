@@ -29,10 +29,14 @@ public class Sistema_chat {
         hardware.novaMensagem(sicrano, "Windows 10 domina!!");
         hardware.novaMensagem(fulano, "Eu gosto mais do Linux kkk");
         hardware.novaMensagem(fulano, "<img");
-        hardware.novaMensagem(fulano, "Em Java os operadores lógicos utilizados são E (representado por &&) e OU (representado por ||). OBS. O símbolo do OU (I) corresponde a barra vertical ou pipe do teclado, caractere ASCII 124. Quando usamos os operadores duplos (&& ou ||) o Java não continua as operações se o resultado já for conhecido.");
+        hardware.novaMensagem(fulano, "Em Java os operadores lógicos utilizados são E (representado por &&) e OU (representado por ||). "
+                + "OBS. O símbolo do OU (I) corresponde a barra vertical ou pipe do teclado, caractere ASCII 124. Quando usamos os operadores "
+                + "duplos (&& ou ||) o Java não continua as operações se o resultado já for conhecido.");
+        //INFORMAÇÕES DOS BOTS
         hardware.botInformacao("hora");
         hardware.botInformacao("temperatura");
         hardware.botInformacao("dolar");
         hardware.botInformacao("bitcoin");
+        
     }
 }

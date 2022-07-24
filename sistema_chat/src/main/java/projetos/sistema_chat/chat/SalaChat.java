@@ -44,8 +44,9 @@ public class SalaChat implements MediatorChat{
             System.out.println("Sua mensagem ultrapassou o limite de 280 caracteres.");
             return false;
         }
-        else
+        else{
             return true; 
+        }
     }
     
     public boolean validaTags(String mensagem){
@@ -53,8 +54,9 @@ public class SalaChat implements MediatorChat{
             System.out.println("Mensagem removida por conter conteudo nao autorizado");
             return false;
         }
-        else
-            return true;  
+        else{
+            return true; 
+        }
     }
     
     public String validaMarcas(String mensagem){
